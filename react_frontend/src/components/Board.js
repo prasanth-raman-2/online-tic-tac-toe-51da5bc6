@@ -10,7 +10,8 @@ const Board = ({ squares, onClick }) => {
           className={`square ${square}`}
           onClick={() => onClick(i)}
           disabled={square}
-          aria-label={`Square ${i + 1}`}
+          aria-label={`Game square ${i + 1}`}
+          style={{ transform: square ? 'scale(1.05)' : 'scale(1)' }}
         >
           {square}
         </button>

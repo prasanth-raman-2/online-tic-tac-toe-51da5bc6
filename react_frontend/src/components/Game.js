@@ -46,7 +46,7 @@ const Game = () => {
     if (winner) {
       return `Winner: ${winner}`;
     } else if (isDraw) {
-      return "Game Draw!";
+      return "It's a tie! Play again?";
     } else {
       return `Next player: ${xIsNext ? 'X' : 'O'}`;
     }
